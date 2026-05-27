@@ -1,6 +1,6 @@
 import itertools
 import re
-from typing import MutableMapping
+from collections.abc import MutableMapping
 from target_bigquery.sql_utils import safe_column_name
 
 

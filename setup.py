@@ -14,19 +14,20 @@ setup(name="pipelinewise-target-bigquery",
       url='https://github.com/transferwise/pipelinewise-target-bigquery',
       classifiers=[
           'License :: OSI Approved :: Apache Software License',
-          'Programming Language :: Python :: 3 :: Only'
+          'Programming Language :: Python :: 3 :: Only',
+          'Programming Language :: Python :: 3.13'
       ],
       py_modules=["target_bigquery"],
       install_requires=[
           'pipelinewise-singer-python>=1,<3',
-          'google-cloud-bigquery>=2.20.0,<3.1.0',
-          'fastavro>=0.22.8,<1.4.11'
+          'google-cloud-bigquery>=3.0.0',
+          'fastavro>=1.4.11'
       ],
       extras_require={
           "test": [
-              'pytest==7.0.1',
-              'pylint==2.13.4',
-              'pytest-cov==3.0.0',
+              'pytest>=8.0.0',
+              'pylint>=3.0.0',
+              'pytest-cov>=4.0.0',
           ]
       },
       entry_points="""
