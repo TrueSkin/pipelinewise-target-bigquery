@@ -554,7 +554,21 @@ class DbSync:
             'bool': 'bo',
             'boolean': 'bo',
             'array': 'arr',
-            'struct': 'sct'}
+            'struct': 'sct',
+            'TIMESTAMP': '__dt',
+            'DATETIME': '__dt',
+            'DATE': 'dy',
+            'TIME': 'tm',
+            'NUMERIC': 'de',
+            'STRING': 'st',
+            'INT64': 'it',
+            'INTEGER': 'it',
+            'BOOL': 'bo',
+            'BOOLEAN': 'bo',
+            'FLOAT': 'fl',
+            'FLOAT64': 'fl',
+            'BYTES': 'by',
+            'BIGNUMERIC': 'de'}
 
         if field.field_type == 'REPEATED':
             field_with_type_suffix = '{}__{}{}'.format(column, col_type_suffixes['array'], time.strftime("%Y%m%d_%H%M"))
